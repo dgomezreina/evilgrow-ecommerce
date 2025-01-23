@@ -10,7 +10,11 @@ export const Hero = async () => {
       <div>
         <h1>{title}</h1>
         <div>
-            <BlocksRenderer content={description} />;
+            <BlocksRenderer content={description} />
+        </div>
+        <div>
+            <img src={`${process.env.STRAPI_HOST}${image.url}`} />
+            
         </div>
       </div>
     </section>
