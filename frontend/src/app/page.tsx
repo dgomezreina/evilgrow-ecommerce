@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Hero } from "@/components/Hero";
-import { Categories } from "@/components/Categories";
+import { Hero } from "@/app/components/Hero";
+import { Categories } from "@/app/components/Categories";
 
 export default function Home() {
   return (
