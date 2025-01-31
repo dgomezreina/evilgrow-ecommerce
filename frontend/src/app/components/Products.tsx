@@ -1,4 +1,6 @@
-import { getProducts } from "@/app/lib/get-products";
+import { getProducts } from "@/app/lib/api";
+import Link from "next/link";
+
 
 export const Products = async ({ categoryId }: { categoryId: string }) => {
   const products = await getProducts({ categoryId });
@@ -35,9 +37,13 @@ export const Products = async ({ categoryId }: { categoryId: string }) => {
             <p className="text-gray-600 text-center mb-4">
               {product.description || "No description available"}
             </p>
-            <button className="mt-auto bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            
+            <Link
+              href={`/store/${product.slug}`}
+              className="mt-auto bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+            >
               View Product
-            </button>
+            </Link>
           </div>
         ))}
       </div>

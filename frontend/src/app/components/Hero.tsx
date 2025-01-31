@@ -1,4 +1,4 @@
-import { getHomeInfo } from "@/app/lib/get-home-info";
+import { getHomeInfo } from "@/app/lib/api";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 
 export const Hero = async () => {

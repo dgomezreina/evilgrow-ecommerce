@@ -1,4 +1,4 @@
-import { getCategories } from "@/app/lib/get-categories";
+import { getCategories } from "@/app/lib/api";
 import Link from "next/link";
 
 export const Categories = async () => {
