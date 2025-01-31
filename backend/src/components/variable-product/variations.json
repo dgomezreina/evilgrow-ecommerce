@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_variable_product_variations",
+  "info": {
+    "displayName": "Variations",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "variableName": {
+      "type": "string",
+      "required": true
+    },
+    "variableOptions": {
+      "type": "json",
+      "required": true
+    },
+    "variablePrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "variableStock": {
+      "type": "integer"
+    }
+  }
+}

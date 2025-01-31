@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product-category",
     "pluralName": "product-categories",
-    "displayName": "ProductCategory",
+    "displayName": "Category",
     "description": ""
   },
   "options": {
